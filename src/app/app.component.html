@@ -1,0 +1,31 @@
+<div class="wrapper">
+  <ejs-spreadsheet #spreadsheet (created)="onCreate()" [height]="500">
+    <e-sheets>
+        <!-- Add [frozenColumns]="2" [frozenRows]="1" in below sheet directive to freeze it upon initial load -->
+      <e-sheet>
+        <e-ranges>
+            <e-range [dataSource]="data"></e-range>
+        </e-ranges>
+        <e-columns>
+            <e-column [width]=80></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=80></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+            <e-column [width]=100></e-column>
+        </e-columns>
+      </e-sheet>
+    </e-sheets>
+  </ejs-spreadsheet>
+</div>
